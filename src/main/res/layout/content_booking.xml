@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E1C69E4E"
+
+        >
+
+        <TextView
+            android:id="@+id/nickname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_margin="20dp"
+            android:textSize="20sp"
+            android:text="이름입니다"
+            />
+
+        <TextView
+            android:id="@+id/personnel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/nickname"
+            app:layout_constraintLeft_toLeftOf="@id/nickname"
+            app:layout_constraintRight_toRightOf="@id/nickname"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <TextView
+            android:id="@+id/scheduled"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/personnel"
+            app:layout_constraintLeft_toLeftOf="@id/nickname"
+            app:layout_constraintRight_toRightOf="@id/nickname"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <Button
+            android:id="@+id/accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/scheduled"
+            app:layout_constraintRight_toLeftOf="@id/reject"
+            android:text="승인"
+            android:background="#88FBEE76"
+            />
+
+        <Button
+            android:id="@+id/reject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/accept"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/accept"
+            app:layout_constraintBottom_toBottomOf="@id/accept"
+            android:text="거절"
+            android:background="#88FBEE76"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

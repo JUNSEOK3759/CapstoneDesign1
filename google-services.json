@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "443115242313",
+    "firebase_url": "https://fir-test-55880.firebaseio.com",
+    "project_id": "fir-test-55880",
+    "storage_bucket": "fir-test-55880.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:443115242313:android:968e2510e40cfa05225098",
+        "android_client_info": {
+          "package_name": "com.work.cafe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "443115242313-marj331boi4f1470prcjg6h6n1c5f94a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3PMxq8e2KApV6Q5Vek9jo71CZDGRrIcY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "443115242313-marj331boi4f1470prcjg6h6n1c5f94a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

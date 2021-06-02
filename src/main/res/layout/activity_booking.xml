@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookingActivity"
+    android:background="#C3C69E4E">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/loading_booking"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/notification_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="예약 요청을 보냈습니다.\n잠시만 기다려 주세요"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="@id/loading"
+            app:layout_constraintRight_toRightOf="@id/loading"
+            app:layout_constraintTop_toBottomOf="@id/loading" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/input_booking"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/personnel_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="예약 인원"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/personnel_input"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/personnel_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:inputType="number"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="@id/personnel_label"
+            app:layout_constraintLeft_toRightOf="@id/schedule_label"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/personnel_label" />
+
+        <TextView
+            android:id="@+id/schedule_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="도착 예정 시간 (분)"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/personnel_label" />
+
+        <EditText
+            android:id="@+id/schedule_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="@id/schedule_label"
+            app:layout_constraintLeft_toLeftOf="@id/personnel_input"
+            app:layout_constraintRight_toRightOf="@id/personnel_input"
+            app:layout_constraintTop_toTopOf="@id/schedule_label" />
+
+        <Button
+            android:id="@+id/booking"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="예약 하기"
+            android:background="#88FBEE76"
+            android:textSize="30sp"
+            app:layout_constraintLeft_toLeftOf="@id/personnel_label"
+            app:layout_constraintRight_toRightOf="@id/personnel_input"
+            app:layout_constraintTop_toBottomOf="@id/schedule_input" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
